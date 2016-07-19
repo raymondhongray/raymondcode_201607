@@ -539,3 +539,42 @@ footer {
     animation: shake 3s infinite;
     -webkit-animation: shake 3s infinite;
 }
+
+.c7-content-group1 {
+    position: relative;
+    text-align: center;
+}
+
+.c7-content-group2 {
+    position: relative;
+    text-align: center;
+}
+
+.c7-content-group3 {
+    position: relative;
+    text-align: center;
+}
+
+.c7-content-unit {
+    display: inline-block;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+}
+
+.c7-title {
+    display: inline-block;
+}
+
+.bomb {
+    display: inline-block;
+}
+
+.c7-icon {
+    display: inline-block;
+}
+
+.c7-line {
+    margin: auto;
+    display: block;
+    width: 60%;
+}
