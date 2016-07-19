@@ -52,30 +52,23 @@ footer {
     cursor: pointer;
 }
 
+.container {
+    position: relative;
+    width: 100%;
+}
+
 .container-01 {
-    position: relative;
     margin-top: 240px;
-    width: 100%;
-}
-
-.container-02 {
-    position: relative;
-    width: 100%;
-}
-
-.container-03 {
-    position: relative;
-    width: 100%;
-}
-
-.container-04 {
-    position: relative;
-    width: 100%;
 }
 
 .container-05 {
-    position: relative;
-    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container-06 {
+    text-align: center;
+    margin-top: 30px;
 }
 
 .menu-bg {
@@ -359,8 +352,8 @@ footer {
     width: 6%;
 }
 
-.container-04-sub1 {
-    position: absolute;
+.container-04-row1 {
+    position: relative;
     top: 0;
     left: 28%;
     width: 15%;
@@ -383,16 +376,24 @@ footer {
     -webkit-animation: shake 3s infinite;
 }
 
-.container-04-sub2 {
+.container-04-row2 {
+    position: relative;
+    top: 22%;
+    left: 50%;
+    width: 35%;
+}
+
+
+/*.container-04-row2 {
     position: absolute;
     top: 22%;
     left: 50%;
-}
+}*/
 
 .group-pic {
     position: relative;
     top: 0;
-    width: 90%;
+    width: 100%;
 }
 
 .chacha {
@@ -423,14 +424,6 @@ footer {
     width: 30%;
 }
 
-
-/*.formula {
-    position: relative;
-    margin: auto;
-    display: block;
-    width: 70%;
-}*/
-
 .formula-bg {
     position: absolute;
     bottom: 0;
@@ -445,4 +438,77 @@ footer {
     margin: auto;
     display: block;
     width: 70%;
+}
+
+.dotted-line-02 {
+    position: relative;
+    margin-left: 15%;
+    width: 10%;
+}
+
+.c5-content-video-bg {
+    position: relative;
+    margin: auto;
+}
+
+.c5-content-video-bg > .iframe-content {
+    position: absolute;
+    top: 20%;
+    left: 56.5%;
+    width: 22%;
+    height: 60%;
+}
+
+.c5-content-video-bg {
+    position: relative;
+    margin: auto;
+}
+
+.c6-content-group1 {
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.c6-content-group1 > .iframe-content {
+    position: absolute;
+    bottom: 7%;
+    left: 11%;
+    width: 22%;
+    height: 40%;
+}
+
+.c6-content-01 {
+    display: inline-block;
+    width: 25%;
+}
+
+.c6-content-m {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-top: 3%;
+}
+
+.c6-content-02 {
+    display: inline-block;
+    width: 25%;
+}
+
+.c6-content-group2 {
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.c6-content-03 {
+    display: inline-block;
+    width: 25%;
+    margin-right: 5%;
+}
+
+.fb-icon-group {
+    display: inline-block;
+    width: 25%;
+    margin-left: 5%;
 }
