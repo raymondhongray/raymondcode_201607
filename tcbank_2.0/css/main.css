@@ -501,6 +501,14 @@ footer {
     margin-top: 5%;
 }
 
+.c6-content-group2 > .iframe-content {
+    position: absolute;
+    bottom: 6%;
+    left: 21.5%;
+    width: 21.5%;
+    height: 44%;
+}
+
 .c6-content-03 {
     display: inline-block;
     width: 25%;
