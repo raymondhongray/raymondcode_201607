@@ -1,7 +1,19 @@
+@media all and (min-width: 1440px) {
+    .wrap {
+        width: 80%;
+    }
+}
+
+@media not all and (min-width: 1440px) {
+    .wrap {
+        width: 100%;
+    }
+}
+
 .wrap {
     position: relative;
-    width: 100%;
     height: 100%;
+    margin: auto;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -21,6 +33,10 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+/*.header-btn > img {
+    width: 80%;
+}*/
 
 .fixed-bg {
     position: fixed;
@@ -222,6 +238,19 @@ footer {
     top: 265px;
     right: 8%;
     width: 4%;
+}
+
+.bird-wing {
+    position: absolute;
+    top: 12px;
+    left: 30px;
+}
+
+.bird-wing.wingup {
+    transform: rotate(1deg);
+    transform-origin: 0;
+    -webkit-transform: rotate(1deg);
+    -webkit-transform-origin: 0;
 }
 
 .arrow-01 {
@@ -504,7 +533,7 @@ footer {
 .c6-content-group2 > .iframe-content {
     position: absolute;
     bottom: 6%;
-    left: 21.5%;
+    left: 17.5%;
     width: 21.5%;
     height: 44%;
 }
@@ -517,7 +546,7 @@ footer {
 
 .fb-icon-group {
     display: inline-block;
-    width: 25%;
+    width: 33%;
     margin-left: 5%;
 }
 
@@ -577,4 +606,34 @@ footer {
     margin: auto;
     display: block;
     width: 60%;
+}
+
+.arrow-04 {
+    position: absolute;
+    top: -5%;
+    left: 35%;
+    width: 2%;
+}
+
+.arrow-04-1 {
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    width: 25%;
+}
+
+.arrow-05 {
+    position: absolute;
+    top: 42%;
+    left: 16%;
+    width: 2.5%;
+}
+
+.arrow-06 {
+    position: absolute;
+    top: 42%;
+    right: 18%;
+    width: 2.5%;
 }
