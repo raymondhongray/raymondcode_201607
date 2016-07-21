@@ -20,6 +20,7 @@
 
 body {
     /*background-image: url(../img/bg.jpg);*/
+    overflow-x: hidden;
 }
 
 header {
@@ -33,11 +34,6 @@ footer {
     position: fixed;
     bottom: 0;
 }
-
-
-/*.header-btn > img {
-    width: 80%;
-}*/
 
 .fixed-bg {
     position: fixed;
@@ -297,6 +293,46 @@ footer {
     }
 }
 
+.container-02-plane {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 15%;
+}
+
+.container-02-plane.active {
+    animation: flying 5s ease-in infinite;
+    -webkit-animation: flying 5s ease-in infinite;
+}
+
+@keyframes flying {
+    0% {
+        left: -30%;
+        top: 100%;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    17% {
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+    33% {
+        top: 90%;
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    40% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 130%;
+        top: 110%;
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+}
+
 .arrow-01 {
     position: absolute;
     top: 0;
@@ -304,7 +340,7 @@ footer {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     width: 1.5%;
-    animation: blink 100ms infinite;
+    animation: blink 1s ease-in-out infinite;
     -webkit-animation: blink 1s ease-in-out infinite;
 }
 
