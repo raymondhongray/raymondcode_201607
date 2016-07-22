@@ -1,5 +1,7 @@
+var istriggerPlane = 0;
+
 function init() {
-    $('.container-01').css('height', $('.menu-bg').height() + 20);
+    // $('.container-01').css('height', $('.menu-bg').height() + 20);
     $('.container-02').css('height', ($('.pad-bg').height() * 1.5));
     $('.container-03').css('height', $('.c3_content-bg').height() * 1.5);
 
@@ -49,4 +51,20 @@ $(window).scroll(function() {
             $(".bird-03 .bird-wing").removeClass('wingdown');
         }, 500);
     }
+
+    if ($(window).scrollTop() >= ($('.arrow-01').offset().top - 350) && istriggerPlane == 0 && !$(".container-02-plane").hasClass('active')) {
+        istriggerPlane = 1;
+        $(".container-02-plane").addClass('active');
+        $(".container-02-plane").css('display', 'block');
+
+        setTimeout(function() {
+            $(".container-02-plane").removeClass('active');
+            $(".container-02-plane").css('display', 'none');
+
+        }, 4000);
+    } 
+
+    if ($(window).scrollTop() <= ($('.arrow-01').offset().top - 350) && istriggerPlane == 1) {
+        istriggerPlane = 0;
+    } 
 });

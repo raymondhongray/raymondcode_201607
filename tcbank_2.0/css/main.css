@@ -94,7 +94,7 @@ footer {
     margin-top: 30px;
 }
 
-.menu-bg {
+/*.menu-bg {
     position: absolute;
     top: 0;
     left: 50%;
@@ -116,7 +116,7 @@ footer {
 .menu-content {
     margin: 15px auto;
     display: block;
-}
+}*/
 
 .cloud-01 {
     position: absolute;
@@ -297,29 +297,30 @@ footer {
     position: absolute;
     top: 100%;
     left: 0%;
-    width: 15%;
+    width: 8%;
+    display: none;
 }
 
 .container-02-plane.active {
-    animation: flying 5s ease-in infinite;
-    -webkit-animation: flying 5s ease-in infinite;
+    animation: flying 4s ease-in infinite;
+    -webkit-animation: flying 4s ease-in infinite;
 }
 
 @keyframes flying {
     0% {
         left: -30%;
-        top: 100%;
+        top: 50%;
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
     17% {
-        -webkit-transform: rotate(-20deg);
-        transform: rotate(-20deg);
-    }
-    33% {
-        top: 90%;
         -webkit-transform: rotate(-10deg);
         transform: rotate(-10deg);
+    }
+    33% {
+        top: 40%;
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
     }
     40% {
         -webkit-transform: rotate(0deg);
@@ -327,7 +328,7 @@ footer {
     }
     100% {
         left: 130%;
-        top: 110%;
+        top: 60%;
         -webkit-transform: rotate(10deg);
         transform: rotate(10deg);
     }

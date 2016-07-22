@@ -63,8 +63,51 @@
         <!-- <div data-0="opacity: 0;" data-100="opacity: 1;">
         </div> -->
         <div class="container-01 container">
-            <div class="menu-bg">
+            <!-- <div class="menu-bg">
                 <img src="img/menu_bg.png">
+            </div> -->
+            <style type="text/css">
+            .menu-bg {
+                position: relative;
+                margin: auto;
+                text-align: center;
+                margin-top: 25%;
+                margin-bottom: 10%;
+            }
+            
+            .menu-bg > .printer2 {
+                position: relative;
+                width: 35%;
+            }
+            
+            .menu-bg > .printer1 {
+                position: absolute;
+                top: 17%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 45%;
+            }
+
+            .menu-bg > .paper1 {
+                position: absolute;
+                top: -25%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 35%;
+            }
+            .menu-bg > .paper2 {
+                position: absolute;
+                bottom: 3%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 35%;
+            }
+            </style>
+            <div class="menu-bg">
+                <img class="printer2" src="img/printer2.png">
+                <img data-0="bottom: 3%;" data-400="bottom: -25%;" class="paper2" src="img/paper2.png">
+                <img data-100="top: -25%;" data-300="top: 10%;" class="paper1" src="img/paper1.png">
+                <img class="printer1" src="img/printer1.png">
             </div>
             <img class="cloud-01" src="img/cloud_01.png">
             <img class="cloud-02" src="img/cloud_02.png">
@@ -84,7 +127,6 @@
                 </div>
             </div>
             <!-- <img data-0="top: 375px;left: 20%;" data-800="top: 450px;left: 0%;" class="bird-02" src="img/bird_02.png"> -->
-
             <div data-0="top: 265px;left: 92%;" data-400="top: 285px;left: 65%;" class="bird-03">
                 <div style="position: relative;">
                     <img src="img/bird_body_01.png">
@@ -103,13 +145,13 @@
                 <img src="img/pad_bg.png">
                 <iframe class="iframe-content" src="http://player.youku.com/embed/XMTUzMDgwOTQzNg" frameborder="0" allowfullscreen></iframe>
             </div>
-            <img class="container-02-plane active" src="img/plane.png">
+            <img class="container-02-plane" src="img/plane.png">
         </div>
         <div class="container-03 container">
             <img class="arrow-02" src="img/arrow_02.png">
             <img class="mission-icon" src="img/mission.png">
             <img class="eraser" src="img/eraser.png">
-            <img data-1200="transform-origin: 0 100%;transform: rotate(0deg);" data-1800="transform-origin: 0 100%;transform: rotate(22.5deg);" class="pencil" src="img/pencil.png">
+            <img data-600="transform-origin: 0 100%;transform: rotate(0deg);" data-1800="transform-origin: 0 100%;transform: rotate(12.5deg);" class="pencil" src="img/pencil.png">
             <div class="c3_content-bg">
                 <img src="img/c3_content.png">
             </div>
