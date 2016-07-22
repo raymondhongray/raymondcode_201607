@@ -1,4 +1,5 @@
 var istriggerPlane = 0;
+var istriggerDottedLines = 0;
 
 function init() {
     // $('.container-01').css('height', $('.menu-bg').height() + 20);
@@ -12,10 +13,25 @@ function init() {
     // }
 }
 
+function setWalkMan(obj, gender) {
+    var num = obj.attr('data-id');
+
+    num = (parseInt(num) + 1) % 4;
+    
+    obj.attr('src', 'img/' + gender + num + '.png');
+    obj.attr('data-id', num);
+}
+
 $(document).ready(function() {
 
     init();
     var skrollr_obj = skrollr.init();
+
+    setInterval(function() {
+
+        setWalkMan($(".girl-01"), 'girl');
+        // setWalkMan($(".man-01"), 'man');
+    }, 800);
 });
 
 $(window).resize(function() {
@@ -55,18 +71,17 @@ $(window).scroll(function() {
     if ($(window).scrollTop() >= ($('.arrow-01').offset().top - 350) && istriggerPlane == 0 && !$(".container-02-plane").hasClass('active')) {
         istriggerPlane = 1;
         $(".container-02-plane").addClass('active');
-        // $(".container-02-plane").css('display', 'block');
 
         setTimeout(function() {
-            // $(".container-02-plane").removeClass('active');
-            // $(".container-02-plane").css('display', 'none');
 
             $(".container-02-plane").remove();
-
         }, 4000);
-    } 
+    }
 
-    // if ($(window).scrollTop() <= ($('.arrow-01').offset().top - 350) && istriggerPlane == 1) {
-    //     istriggerPlane = 0;
-    // } 
+    if ($(window).scrollTop() >= ($('.chacha').offset().top - 600) && istriggerDottedLines == 0) {
+        istriggerDottedLines = 1;
+
+        $(".dotted-line-01").attr('src', 'img/dotted_line_01.gif');
+        $(".dotted-line-02").attr('src', 'img/dotted_line_02.gif');
+    } 
 });
