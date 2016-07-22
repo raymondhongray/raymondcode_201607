@@ -32,6 +32,34 @@ $(document).ready(function() {
         setWalkMan($(".girl-01"), 'girl');
         // setWalkMan($(".man-01"), 'man');
     }, 800);
+
+    var casefilmOffset = $('.casefilm-icon').offset().top - 150;
+    $('.btn-casefilm').click(function() {
+        $('html,body').animate({
+            scrollTop: casefilmOffset
+        }, 500);
+    });
+
+    var missionOffset = $('.mission-icon').offset().top - 150;
+    $('.btn-mission').click(function() {
+        $('html,body').animate({
+            scrollTop: missionOffset
+        }, 800);
+    });
+
+    var solutionOffset = $('.solution-icon').offset().top - 150;
+    $('.btn-solution').click(function() {
+        $('html,body').animate({
+            scrollTop: solutionOffset
+        }, 1200);
+    });
+
+    var resultOffset = $('.result-icon').offset().top - 150;
+    $('.btn-result').click(function() {
+        $('html,body').animate({
+            scrollTop: resultOffset
+        }, 1500);
+    });
 });
 
 $(window).resize(function() {
