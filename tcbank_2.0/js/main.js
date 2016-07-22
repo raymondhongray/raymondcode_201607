@@ -3,6 +3,7 @@ var istriggerDottedLines = 0;
 
 function init() {
     // $('.container-01').css('height', $('.menu-bg').height() + 20);
+
     $('.container-02').css('height', ($('.pad-bg').height() * 1.5));
     $('.container-03').css('height', $('.c3_content-bg').height() * 1.5);
 
@@ -67,7 +68,7 @@ $(window).resize(function() {
 });
 
 $(window).scroll(function() {
-    console.log($(window).scrollTop());
+    // console.log($(window).scrollTop());
 
     if (!$(".bird-01 .bird-wing").hasClass('wingdown')) {
 
