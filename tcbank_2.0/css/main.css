@@ -340,8 +340,8 @@ footer {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     width: 1.5%;
-    animation: blink 1s ease-in-out infinite;
-    -webkit-animation: blink 1s ease-in-out infinite;
+    /*animation: blink 1s ease-in-out infinite;
+    -webkit-animation: blink 1s ease-in-out infinite;*/
 }
 
 @keyframes blink {
@@ -473,8 +473,6 @@ footer {
     top: 0;
     left: 30%;
     width: 18%;
-    animation: blink 100ms infinite;
-    -webkit-animation: blink 1s ease-in-out infinite;
 }
 
 .solution-icon {
