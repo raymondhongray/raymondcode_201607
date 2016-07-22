@@ -55,16 +55,18 @@ $(window).scroll(function() {
     if ($(window).scrollTop() >= ($('.arrow-01').offset().top - 350) && istriggerPlane == 0 && !$(".container-02-plane").hasClass('active')) {
         istriggerPlane = 1;
         $(".container-02-plane").addClass('active');
-        $(".container-02-plane").css('display', 'block');
+        // $(".container-02-plane").css('display', 'block');
 
         setTimeout(function() {
-            $(".container-02-plane").removeClass('active');
-            $(".container-02-plane").css('display', 'none');
+            // $(".container-02-plane").removeClass('active');
+            // $(".container-02-plane").css('display', 'none');
+
+            $(".container-02-plane").remove();
 
         }, 4000);
     } 
 
-    if ($(window).scrollTop() <= ($('.arrow-01').offset().top - 350) && istriggerPlane == 1) {
-        istriggerPlane = 0;
-    } 
+    // if ($(window).scrollTop() <= ($('.arrow-01').offset().top - 350) && istriggerPlane == 1) {
+    //     istriggerPlane = 0;
+    // } 
 });
