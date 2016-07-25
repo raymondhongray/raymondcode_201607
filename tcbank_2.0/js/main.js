@@ -4,8 +4,8 @@ var istriggerDottedLines = 0;
 function init() {
     // $('.container-01').css('height', $('.menu-bg').height() + 20);
 
-    $('.container-02').css('height', ($('.pad-bg').height() * 1.5));
-    $('.container-03').css('height', $('.c3_content-bg').height() * 1.5);
+    // $('.container-02').css('height', ($('.pad-bg').height() * 1.5));
+    // $('.container-03').css('height', $('.c3_content-bg').height() * 1.5);
 
     // if ($(window).width() > 1400) {
     //  $('.container-04').css('height', $('.c4_content').height() + ($('.dotted-line-01').height() * 2) + ($('.formula-bg').height() * 1.5));
@@ -18,14 +18,20 @@ function setWalkMan(obj, gender) {
     var num = obj.attr('data-id');
 
     num = (parseInt(num) + 1) % 4;
-    
+
     obj.attr('src', 'img/' + gender + num + '.png');
     obj.attr('data-id', num);
 }
 
+$(window).load(function() {
+    // this will fire after the entire page is loaded, including images
+    $('.loading-effect').fadeOut(1000, 'swing');
+});
+
 $(document).ready(function() {
 
-    init();
+    // init();
+
     var skrollr_obj = skrollr.init();
 
     setInterval(function() {
@@ -63,9 +69,9 @@ $(document).ready(function() {
     });
 });
 
-$(window).resize(function() {
-    init();
-});
+// $(window).resize(function() {
+//     init();
+// });
 
 $(window).scroll(function() {
     // console.log($(window).scrollTop());
@@ -112,5 +118,5 @@ $(window).scroll(function() {
 
         $(".dotted-line-01").attr('src', 'img/dotted_line_01.gif');
         $(".dotted-line-02").attr('src', 'img/dotted_line_02.gif');
-    } 
+    }
 });
