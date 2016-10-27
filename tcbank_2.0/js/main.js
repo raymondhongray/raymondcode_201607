@@ -26,19 +26,6 @@ function setWalkMan(obj, gender) {
 $(window).load(function() {
     // this will fire after the entire page is loaded, including images
     $('.loading-effect').fadeOut(1000, 'swing');
-});
-
-$(document).ready(function() {
-
-    // init();
-
-    var skrollr_obj = skrollr.init();
-
-    setInterval(function() {
-
-        setWalkMan($(".girl-01"), 'girl');
-        // setWalkMan($(".man-01"), 'man');
-    }, 800);
 
     var casefilmOffset = $('.casefilm-icon').offset().top - 150;
     $('.btn-casefilm').click(function() {
@@ -67,6 +54,19 @@ $(document).ready(function() {
             scrollTop: resultOffset
         }, 1500);
     });
+});
+
+$(document).ready(function() {
+
+    // init();
+
+    var skrollr_obj = skrollr.init();
+
+    setInterval(function() {
+
+        setWalkMan($(".girl-01"), 'girl');
+        // setWalkMan($(".man-01"), 'man');
+    }, 800);
 });
 
 // $(window).resize(function() {
